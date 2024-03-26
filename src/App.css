@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -35,4 +31,135 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+ul{
+  list-style-type: none;
+  margin: auto;
+  padding: auto;
+  padding-top: 30px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li{
+  float: left;
+  padding: 5px;
+}
+
+/* ul li {
+  display: inline-block;
+  margin: 0 1rem;
+} */
+
+ul li a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  color: black;
+}
+
+ul li a::after {
+  content: "";
+  position: absolute;
+  height: 0.1rem;
+  width: 0%;
+  left: 0;
+  top: 1.8rem;
+  background: rgb(59, 110, 158);
+  transition: 0.3s linear;
+}
+
+ul li a:hover::after {
+  width: 100%;
+}
+
+
+ul li a:hover {
+  color: rgb(91, 165, 235);
+}
+
+
+/* .active{
+
+} */
+
+.box{
+  border: 3px solid firebrick;
+  width: 400px;
+  height: 400px;
+  border-radius: 6px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.welcome-box{
+  border-bottom: 3px solid firebrick;
+  background-color: crimson;
+  border-radius: 6px;
+  border-color: firebrick;
+}
+
+.welcome{
+  padding: 3px;
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.press{
+  padding: 3px;
+  text-decoration-color: gray;
+  margin-bottom: 3px;
+}
+
+.thinking{
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.dropbox{
+margin-top: 10px;
+}
+
+.dropbox select{
+  width: 95%;
+  height: 30px;
+  cursor: pointer;
+}
+
+.sign{
+  padding: 3px;
+  font-size: large;
+  font-weight: bold;
+  color: crimson;
+}
+
+.login {
+  padding: 5px 20px;
+  width: 95%;
+  height: 30px;
+  border-radius: 3px;
+  border-style: none;
+  line-height: 16px;
+  font-weight: bold;
+  margin: 20px 0;
+  background-color: crimson;
+  cursor: pointer;
+}
+
+
+
+
+
+
+.home {
+  margin-top:  10%;
+}
+
+.list {
+  margin-top: 13%;
 }
